@@ -1,0 +1,142 @@
+{
+  "name": "Chennai Water Distribution Network",
+  "generatedAt": "2026-10-13T07:39:26.307Z",
+  "converter": "@tmcw/togeojson",
+  "spatialReference": "WGS84 geographic coordinates (EPSG:4326) as supplied in KML; values are lon,lat.",
+  "provenance": "Chennai Metro Water supply infrastructure layers (transmission mains, interconnection pipes, distribution chambers, overhead/underground tanks, flow meters).",
+  "caveats": [
+    "Geometry and attributes are reproduced verbatim from the source KML; no values are invented.",
+    "Presence of a feature does not confirm it is currently operational, surveyed recently, or hydraulically valid.",
+    "Connectivity is derived from recorded from/to identifier fields where present; otherwise it is unavailable."
+  ],
+  "layers": [
+    {
+      "key": "transmission",
+      "label": "Water Main Transmission Network",
+      "category": "network",
+      "sourceFile": "chennai-water-network.kml",
+      "outputFile": "chennai-water-network.geojson",
+      "available": true,
+      "featureCount": 5700,
+      "geometryTypes": {
+        "LineString": 5699,
+        "GeometryCollection": 1
+      },
+      "bbox": [
+        79.5346256,
+        11.4180233,
+        80.3365157,
+        13.3817879
+      ],
+      "note": "Primary transmission mains with tapping/inclusion point IDs.",
+      "sourceBytes": 10978125,
+      "sourceModified": "2026-10-13T07:22:33.581Z"
+    },
+    {
+      "key": "interconnection",
+      "label": "Water Supply Interconnection Pipes",
+      "category": "pipe",
+      "sourceFile": "Water Supply Interconnection Pipes.kml",
+      "outputFile": "chennai-interconnection-pipes.geojson",
+      "available": true,
+      "featureCount": 12465,
+      "geometryTypes": {
+        "LineString": 12465
+      },
+      "bbox": [
+        79.8897929062866,
+        12.7023579840179,
+        80.3286758994612,
+        13.3340348355785
+      ],
+      "note": "Interconnection pipes between water distribution stations.",
+      "sourceBytes": 18478111,
+      "sourceModified": "2026-10-13T07:28:57.411Z"
+    },
+    {
+      "key": "chambers",
+      "label": "Distribution Chambers",
+      "category": "chamber",
+      "sourceFile": "Water Supply Distribution Chambers.kml",
+      "outputFile": "chennai-distribution-chambers.geojson",
+      "available": true,
+      "featureCount": 3382,
+      "geometryTypes": {
+        "Polygon": 3381,
+        "None": 1
+      },
+      "bbox": [
+        79.5347805316386,
+        11.4217470169843,
+        80.3359367902868,
+        13.3799605605328
+      ],
+      "note": "Distribution chamber footprints.",
+      "sourceBytes": 5985779,
+      "sourceModified": "2026-10-13T07:31:04.499Z"
+    },
+    {
+      "key": "overhead",
+      "label": "Overhead Tanks",
+      "category": "tank",
+      "sourceFile": "Water Supply Overhead Tanks.kml",
+      "outputFile": "chennai-overhead-tanks.geojson",
+      "available": true,
+      "featureCount": 278,
+      "geometryTypes": {
+        "Polygon": 278
+      },
+      "bbox": [
+        80.1468054035154,
+        12.8558023308259,
+        80.3286985869699,
+        13.2302537139303
+      ],
+      "note": "Overhead service reservoir footprints.",
+      "sourceBytes": 784966,
+      "sourceModified": "2026-10-13T07:30:25.870Z"
+    },
+    {
+      "key": "underground",
+      "label": "Underground Tanks",
+      "category": "tank",
+      "sourceFile": "Water Supply Underground Tanks.kml",
+      "outputFile": "chennai-underground-tanks.geojson",
+      "available": true,
+      "featureCount": 148,
+      "geometryTypes": {
+        "Polygon": 148
+      },
+      "bbox": [
+        80.1468361740547,
+        12.7044984786547,
+        80.3269433817149,
+        13.227144834264
+      ],
+      "note": "Underground service reservoir footprints.",
+      "sourceBytes": 282336,
+      "sourceModified": "2026-10-13T07:29:54.354Z"
+    },
+    {
+      "key": "meters",
+      "label": "Flow Meters",
+      "category": "meter",
+      "sourceFile": "Water Supply Flow Meters.kml",
+      "outputFile": "chennai-flow-meters.geojson",
+      "available": true,
+      "featureCount": 326,
+      "geometryTypes": {
+        "Point": 326
+      },
+      "bbox": [
+        79.5504439587503,
+        11.6613286439384,
+        80.3359298472003,
+        13.3167493354861
+      ],
+      "note": "Metering locations (points).",
+      "sourceBytes": 478357,
+      "sourceModified": "2026-10-13T07:31:23.299Z"
+    }
+  ]
+}
